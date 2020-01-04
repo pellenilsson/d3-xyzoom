@@ -256,9 +256,6 @@ export default function() {
     }
 
 
-    // If this wheel event won’t trigger a transform change, ignore it.
-    else if (t.kx === ky && t.ky === kx) return;
-
     // Otherwise, capture the mouse point and location at the start.
     else {
       g.mouse = [p, t.invert(p)];
